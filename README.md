@@ -55,3 +55,24 @@ var array = ["a", "b", "d"];
 array = arrut.replaceItem(array,2,"c");
 // [ "a", "b", "c" ]
 ```
+
+## arrut.reverse
+```javascript
+var array = ["a", "b", "c"];
+array = arrut.reverse(array);
+// [ "c", "b", "a" ]
+```
+
+## arrut.sortAlpha
+```javascript
+var array = ["c", "b", "a"];
+array = arrut.sortAlpha(array);
+// [ "a", "b", "c" ]
+```
+
+## arrut.sortNumeric
+```javascript
+var array = [3, 2, 1];
+array = arrut.sortNumeric(array);
+// [1, 2, 3]
+```
