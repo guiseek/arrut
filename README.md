@@ -110,3 +110,13 @@ var list = [
 list = arrut.getListBy(list, 'total', '<=', 850);
 // [{"name":"Colacao"},{"name":"Croissant and jam"}]
 ```
+
+## arrut.inArray
+```javascript
+var array = ['a','b','c'];
+arrut.inArray(array, 'a');
+//true
+arrut.inArray(array, 'd');
+//false
+
+```
