@@ -5,8 +5,18 @@
   <title></title>
   <script type="text/javascript" src="../lib/arrut.js"></script>
   <script type="text/javascript">
-  var array = ['a','b','c'];
+  var array = ["a","b","c"];
   var arrayNumeric = [3,2,1];
+  var list = [
+    {name: 'Full English', total: 1500},
+    {name: 'Colacao', total: 260},
+    {name: 'Croissant and jam', total: 520},
+    {name: 'Granola with Greek yoghurt and blueberries', total: 680},
+    {name: 'Shepherds Pie with strawberry yoghurt', total: 915},
+    {name: 'Milky Porridge with beef and green beans', total: 875},
+    {name: 'Phad Thai', total: 750},
+    {name: 'Chicken Katsu curry and rice', total: 830},
+  ];
   console.log(arrut.isEmpty(array));
   console.log(arrut.clone(array));
   console.log(arrut.getLastItem(array));
@@ -18,6 +28,9 @@
   console.log(arrut.reverse(array));
   console.log(arrut.sortAlpha(array));
   console.log(arrut.sortNumeric(arrayNumeric));
+  console.log(arrut.merge(array, arrayNumeric));
+  console.log(arrut.remove(array, 'c'));
+  console.log(arrut.getListBy(list, 'total', '<=', 850));
   </script>
 </head>
 <body>

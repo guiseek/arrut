@@ -76,3 +76,19 @@ var array = [3, 2, 1];
 array = arrut.sortNumeric(array);
 // [1, 2, 3]
 ```
+
+## arrut.merge
+```javascript
+var array;
+var arrayOne = ['a','b','c'];
+var arrayTwo = [3,2,1];
+array = arrut.merge(arrayOne, arrayTwo);
+// ['a','b','c', 1, 2, 3]
+```
+
+## arrut.merge
+```javascript
+var array = ['a','b','c'];
+array = arrut.remove(array, 'a');
+// [b','c']
+```

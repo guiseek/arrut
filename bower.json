@@ -1,0 +1,21 @@
+{
+  "name": "arrut",
+  "version": "0.0.0",
+  "homepage": "https://github.com/guiseek/arrut",
+  "authors": [
+    "Gui Seek <guiseek@gmail.com>"
+  ],
+  "description": "ArrayUtils",
+  "main": "./lib/arrut.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "ArrayUtils"
+  ],
+  "license": "GNU",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guiseek/arrut.git"
+  }
+}
