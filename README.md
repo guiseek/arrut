@@ -108,5 +108,5 @@ var list = [
   {name: 'Croissant and jam', total: 520}
 ];
 list = arrut.getListBy(list, 'total', '<=', 850);
-// [{"name":"Colacao"},{"name":"Croissant and jam","calories":true}]
+// [{"name":"Colacao"},{"name":"Croissant and jam"}]
 ```
