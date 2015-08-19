@@ -120,3 +120,25 @@ arrut.inArray(array, 'd');
 //false
 
 ```
+
+## arrut.findObjectInArray
+```html
+...
+<input type="text" id="nome" />
+<input type="text" id="sobrenome" />
+<input type="email" id="email" />
+...
+```
+```javascript
+var nodeList = document.querySelectorAll('input'),
+list = [
+  {name: 'Full English', total: 1500},
+  {name: 'Colacao', total: 260},
+  {name: 'Croissant and jam', total: 520}
+];
+
+list = arrut.findObjectInArray(list, 'total',1500);
+// [{"name":"Full English","total":1500}]
+list = arrut.findObjectInArray(nodeList, 'id','nome');
+// [input#name]
+```

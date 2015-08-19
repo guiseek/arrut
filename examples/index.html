@@ -4,6 +4,14 @@
   <meta charset="utf-8">
   <title></title>
   <script type="text/javascript" src="../lib/arrut.js"></script>
+
+</head>
+<body>
+  <input type="text" id="name">
+  <input type="text">
+  <input type="text">
+  <input type="text">
+  <input type="text">
   <script type="text/javascript">
   var array = ["a","b","c"];
   var arrayNumeric = [3,2,1];
@@ -28,9 +36,10 @@
   console.log(arrut.merge(array, arrayNumeric));
   console.log(arrut.remove(array, 'c'));
   console.log(arrut.getListBy(list, 'total', '<=', 850));
+  console.log(arrut.isNodeList(document.querySelectorAll('input')));
+  console.log(arrut.clone(document.querySelectorAll('input')));
+  console.log(arrut.getLastItem(document.querySelectorAll('input')));
+  console.log(arrut.findObjectInArray(document.querySelectorAll('input'),'id','name'));
   </script>
-</head>
-<body>
-
 </body>
 </html>
