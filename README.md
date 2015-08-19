@@ -86,9 +86,27 @@ array = arrut.merge(arrayOne, arrayTwo);
 // ['a','b','c', 1, 2, 3]
 ```
 
-## arrut.merge
+## arrut.remove
 ```javascript
 var array = ['a','b','c'];
 array = arrut.remove(array, 'a');
 // [b','c']
+```
+
+## arrut.remove
+```javascript
+var array = ['a','b','c'];
+array = arrut.remove(array, 'a');
+// [b','c']
+```
+
+## arrut.getListBy
+```javascript
+var list = [
+  {name: 'Full English', total: 1500},
+  {name: 'Colacao', total: 260},
+  {name: 'Croissant and jam', total: 520}
+];
+list = arrut.getListBy(list, 'total', '<=', 850);
+// [{"name":"Colacao","calories":true},{"name":"Croissant and jam","calories":true}]
 ```
