@@ -1,44 +1,57 @@
-# arrut
+# arrut.js
 ArrayUtils
 
-## Array is empty
+## arrut.isEmpty
 ```javascript
 var array = ["a", "b", "c"];
 var empty = arrut.isEmpty(array);
 // false
 ```
 
-## Array clone
+## arrut.clone
 ```javascript
 var array = ["a", "b", "c"];
 var clone = arrut.clone(array);
 // ["a", "b", "c"]
 ```
 
-## Array getLastItem
+## arrut.getLastItem
 ```javascript
 var array = ["a", "b", "c"];
-var array = arrut.getLastItem(array);
+array = arrut.getLastItem(array);
 // c
 ```
 
-## Array removeFirstItem
+## arrut.removeFirstItem
 ```javascript
 var array = ["a", "b", "c"];
-var array = arrut.removeFirstItem(array);
+array = arrut.removeFirstItem(array);
 // [ "b", "c" ]
 ```
 
-## Array addAsFirstItem
+## arrut.addAsFirstItem
 ```javascript
 var array = ["b", "c"];
-var array = arrut..addAsFirstItem(array,"a");
+array = arrut.addAsFirstItem(array,"a");
 // [ "a", "b", "c" ]
 ```
 
-## Array addAsLastItem
+## arrut.addAsLastItem
 ```javascript
 var array = ["a", "b"];
-var array = arrut..addAsLastItem(array,"c");
+array = arrut.addAsLastItem(array,"c");
+// [ "a", "b", "c" ]
+```
+
+## arrut.replaceItem
+```javascript
+var array = ["a", "b", "d"];
+array = arrut.replaceItem(array,"d","c");
+// [ "a", "b", "c" ]
+```
+or
+```javascript
+var array = ["a", "b", "d"];
+array = arrut.replaceItem(array,2,"c");
 // [ "a", "b", "c" ]
 ```
